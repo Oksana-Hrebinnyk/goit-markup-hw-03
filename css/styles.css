@@ -7,11 +7,32 @@
     /* Background colors */
     --main-bg-cl: #2F303A;
 }
+.container{
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .body{
     color: var(--main-txt-cl);
     font-family: "Roboto";
 }
+/* reset */
+h1,h2,h3,h4,h5,h6,P{
+    margin: 0;
+}
+img{
+    display: block;
+}
 
+.link{
+    text-decoration: none;
+    color: currentColor;
+}
+.header-container{
+    display: flex;
+}
 /* Navigation to other pages */
 .logo{
     text-decoration: none;
@@ -26,14 +47,19 @@
     color: #2196F3; 
 }
 .nav-list-item-studio{
+    list-style: none;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+    color: var(--main-txt-cl)
+}
+.nav-list-item-studio:hover{
     color: #2196F3;
 }
 .nav-list-item{
+    list-style: none;
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -47,7 +73,7 @@
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: var(--main-txt-cl);
+    color: #757575;
 }
 .mail:hover{
     color: #2196F3;
@@ -68,7 +94,6 @@
     font-size: 44px;
     line-height: calc(60 / 44);
     font-style: normal;
-    font-weight: 900;
     color: #FFFFFF;
 }
 .main-heading, .heading-pecularities{
@@ -83,21 +108,37 @@
     line-height: calc(30/16);
     letter-spacing: 0.06em;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    border-radius: 4px;
 }
 /* Section 2 */
+.second-section{
+    display: flex;
+    flex-direction: row;
+}
 .heading-pecularities{
+    display: flex;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-
+    margin-bottom: 10px;
+    margin-right: 30px;
 }
 .text-pecularities{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 94px;
+    margin-right: 30px;
 }
 /* Section 3 */
 .heading-2{
@@ -106,21 +147,42 @@
     line-height: calc(42/36);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.occupation-photos{
+    margin-right: 30px;
+    margin-bottom: 94px;
 }
 /* Section 4 */
+.staff{
+    background: #F5F4FA;
+    display: flex;
+}
 .staff-names{
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .positions{
-    font-size: 16px;
     line-height: calc(19/16);
     letter-spacing: 0.03em;
     color: #757575;
+    text-align: center;
+    margin-bottom: 30px;
 }
+.team-photos{
+    margin-right: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 /* footer */
 .logo-footer{
     text-decoration: none;
@@ -159,6 +221,10 @@
     color: rgba(255, 255, 255, 0.6);
 }
 /* Portfolio */
+.btns{
+    display: flex;
+    flex-direction: row;
+}
 .portfolio-btn-main{
     font-family: inherit;
     font-weight: 500;
@@ -175,6 +241,14 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--main-txt-cl);
+}
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio-item{
+    width: 370px;
 }
 .projects-heading{
     line-height: calc(36/18);
