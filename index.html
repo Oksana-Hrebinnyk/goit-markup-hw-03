@@ -23,8 +23,8 @@
     <title>Web Studio</title>
   </head>
   <body class="body">
-    <div class="container">
-        <header class="top-line">
+    <header class="top-line">
+        <div class="container header-container">
           <!-- Navigations to other pages -->
           <nav class="top-line">
             <a href="./index.html" class="logo"><span class="logo-color">Web</span>Studio</a>
@@ -48,8 +48,8 @@
               <a href="tel:+380961111111" class="telephone" class="link">+38 096 111 11 11</a>
             </li>
           </ul>
-        </header>
-    </div>
+       </div> 
+    </header>
     <!-- Section 1 -->
     <main>
     <section class="first-section section">
@@ -61,8 +61,8 @@
       <!-- Section 2 pecularities -->
           <section>
             <div class="container">
-            <ul class="second-section section">
-              <li>
+            <ul class="second-section">
+              <li class="pecularities-list">
                 <h3 class="heading-pecularities">Увага до деталей</h3>
                 <p class="text-pecularities">
                   Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
@@ -115,23 +115,31 @@
           <ul class="team-photos">
             <li class="team-member">
               <img src="./img/our-team/img1.jpg" alt="Team member 1" width="270" height="260"/>
-              <h3 class="staff-names">Ігор Дем'яненко</h3>
+              <div class="names-positions">
+                <h3 class="staff-names">Ігор Дем'яненко</h3>
               <p lang="en" class="positions">Product Designer</p>
+              </div>
             </li>
             <li class="team-member">
               <img src="./img/our-team/img2.jpg" alt="Team member 2" width="270" height="260"/>
-              <h3 class="staff-names">Ольга Рєпіна</h3>
+              <div class="names-positions">
+                <h3 class="staff-names">Ольга Рєпіна</h3>
               <p lang="en" class="positions">Frontend Developer</p>
+              </div>             
             </li>
             <li class="team-member">
               <img src="./img/our-team/img3.jpg" alt="Team member 3" width="270" height="260"/>
-              <h3 class="staff-names">Микола Тарасов</h3>
-              <p lang="en" class="positions">Marketing</p>
+              <div class="names-positions">
+                <h3 class="staff-names">Микола Тарасов</h3>
+               <p lang="en" class="positions">Marketing</p>
+              </div>
             </li>
             <li class="team-member">
               <img src="./img/our-team/img4.jpg" alt="Team member 4" width="270" height="260"/>
-              <h3 class="staff-names">Михайло Єрмаков</h3>
-              <p lang="en" class="positions">UI Designer</p>
+              <div class="names-positions">
+               <h3 class="staff-names">Михайло Єрмаков</h3>
+               <p lang="en" class="positions">UI Designer</p>
+              </div>
             </li>
           </ul>
        </div> 
@@ -143,11 +151,11 @@
         <a href="./index.html" class="logo-footer" class="link"><span class="logo-color">Web</span>Studio</a>
         <address>
           <p class="adress-footer" class="link">м. Київ, пр-т Лесі Українки, 26</p>
-          <ul>
-            <li>
+          <ul class="contacts-footer">
+            <li class="mail-telephone-footer">
               <a href="mailto:info@devstudio.com" class="mail-footer" class="link">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="mail-telephone-footer">
               <a href="tel:+380961111111" class="telephone-footer" class="link">+38 096 111 11 11</a>
             </li>
           </ul>

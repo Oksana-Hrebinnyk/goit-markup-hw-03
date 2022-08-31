@@ -8,7 +8,7 @@
     --main-bg-cl: #2F303A;
 }
 .container{
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
@@ -33,8 +33,9 @@ li{
     list-style-type: none;
 }
 /* Header */
-.top-line{
+.header-container{
     display: flex;
+    align-items: center;
 }
 /* Navigation to other pages */
 .logo{
@@ -42,17 +43,16 @@ li{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: calc(31/26);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    padding-top: 32px;
-    padding-bottom: 32px;
     align-items: center;
 }
 .logo-color{
     color: #2196F3; 
 }
 .nav{
+    margin:0;
+    padding: 0;
     display: flex;
     gap: 50px;
 }
@@ -114,9 +114,8 @@ li{
 .header-contacts{
     display: flex;
     gap: 50px;
-    margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    margin: 0px;
+    padding: 0px;
     align-items: center;
 }
 .mail{
@@ -126,6 +125,9 @@ li{
     line-height: calc(16/14);
     letter-spacing: 0.02em;
     color: #757575;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .mail:hover{
     color: #2196F3;
@@ -147,6 +149,10 @@ li{
     line-height: calc(60 / 44);
     font-style: normal;
     color: #FFFFFF;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 .main-heading, .heading-pecularities{
     text-transform: uppercase;
@@ -166,11 +172,23 @@ li{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
     border-radius: 4px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Section 2 */
 .second-section{
+    margin: 0px;
+    padding: 0px;
     display: flex;
+    margin: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.pecularities-list{
+
+    height: 98px;
 }
 .heading-pecularities{
     font-weight: 700;
@@ -179,15 +197,12 @@ li{
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     margin-bottom: 10px;
-    margin-right: 30px;
 }
 .text-pecularities{
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: #757575;
-    margin-bottom: 94px;
-    margin-right: 30px;
 }
 /* Section 3 */
 .heading-2{
@@ -196,7 +211,7 @@ li{
     line-height: calc(42/36);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     text-align: center;
 }
 .occupation-photos{
@@ -214,7 +229,6 @@ li{
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .positions{
@@ -222,8 +236,7 @@ li{
     letter-spacing: 0.03em;
     color: #757575;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
+
 }
 .team-photos{
     display: flex;
@@ -235,6 +248,10 @@ li{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
+.names-positions{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 /* footer */
 .logo-footer{
@@ -245,8 +262,12 @@ li{
     line-height: calc(31/26);
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
 }
 .footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A; 
 }
 .adress-footer{
@@ -255,6 +276,14 @@ li{
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-bottom: 0px;
+}
+.contacts-footer{
+    margin: 0px;
+    padding: 0px;
+}
+.mail-telephone-footer:not(:last-child){
+    margin-bottom: 0px;
 }
 .mail-footer{
     font-style: normal;
@@ -271,6 +300,8 @@ li{
     line-height: calc(14/14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin: auto;
+    padding: auto;
 }
 /* Portfolio */
 .btns{
