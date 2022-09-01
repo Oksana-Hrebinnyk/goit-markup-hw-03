@@ -37,6 +37,11 @@ li{
     display: flex;
     align-items: center;
 }
+.top-line{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
 /* Navigation to other pages */
 .logo{
     text-decoration: none;
@@ -46,6 +51,7 @@ li{
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
     align-items: center;
+    margin-right: 93px;
 }
 .logo-color{
     color: #2196F3; 
@@ -143,8 +149,11 @@ li{
 /* Section 1 */
 .first-section{
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .main-heading{
+    font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     font-style: normal;
@@ -152,7 +161,7 @@ li{
     width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
+    margin-bottom: 30px;
 }
 .main-heading, .heading-pecularities{
     text-transform: uppercase;
@@ -178,16 +187,17 @@ li{
 }
 
 /* Section 2 */
+.pecularities{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .second-section{
     margin: 0px;
     padding: 0px;
     display: flex;
-    margin: 0px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 .pecularities-list{
-
+    width: 270px;
     height: 98px;
 }
 .heading-pecularities{
@@ -211,12 +221,14 @@ li{
     line-height: calc(42/36);
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .occupation-photos{
     display: flex;
     gap: 30px;
+    padding: 0px;
+    margin: 0px;
 }
 /* Section 4 */
 .our-team{
@@ -241,7 +253,8 @@ li{
 .team-photos{
     display: flex;
     gap: 30px;
-
+    padding: 0px;
+    margin: 0px;
 }
 .team-member{
     background: #FFFFFF;
@@ -276,14 +289,14 @@ li{
     line-height: calc(24/14);
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    margin-bottom: 0px;
+    margin-bottom: 9px;
 }
 .contacts-footer{
     margin: 0px;
     padding: 0px;
 }
 .mail-telephone-footer:not(:last-child){
-    margin-bottom: 0px;
+    margin-bottom: 9px;
 }
 .mail-footer{
     font-style: normal;
@@ -304,11 +317,16 @@ li{
     padding: auto;
 }
 /* Portfolio */
+.portfolio-projects{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .btns{
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .portfolio-btn-main{
     width: 73px;
@@ -350,19 +368,31 @@ li{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    margin: 0px;
+    padding: 0px;
 }
 .portfolio-item{
     width: 370px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.projects{
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 20px;
 }
 .projects-heading{
+    font-weight: 700;
+    font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
-    text-align: center;
     color: var(--main-txt-cl);
 }
 .projects-name{
+    font-weight: 400;
+    font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
-    text-align: center;
     color: #757575;
 }
